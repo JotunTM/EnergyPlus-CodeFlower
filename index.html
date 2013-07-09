@@ -47,7 +47,7 @@ line.link {
           <fieldset>
           <label>Example projects from GitHub:</label>
           <select id="project">
-            <option value="data/energyplusbyfilename.json">Organized by File Name</option>
+            <option value="data/energyplusbyname.json">Organized by File Name</option>
             <!--<option value="data/uptime.json">fzaninotto / uptime</option>-->
             <!--<option value="data/faker.json">fzaninotto / faker</option>-->
             <!--<option value="data/jquery.json">jquery / jquery</option>-->
@@ -136,8 +136,8 @@ line.link {
         if (currentCodeFlower) currentCodeFlower.cleanup();
         // adapt layout size to the total number of elements
         var total = countElements(json);
-        w = parseInt(Math.sqrt(total) * 30, 10);
-        h = parseInt(Math.sqrt(total) * 30, 10);
+        w = parseInt(Math.sqrt(total) * 50, 10);
+        h = parseInt(Math.sqrt(total) * 50, 10);
         // create a new CodeFlower
         currentCodeFlower = new CodeFlower("#visualization", w, h).update(json);
       };
