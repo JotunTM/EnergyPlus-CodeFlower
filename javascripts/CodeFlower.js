@@ -16,7 +16,7 @@ var CodeFlower = function(selector, w, h) {
 
   this.force = d3.layout.force()
     .on("tick", this.tick.bind(this))
-    .charge(function(d) { return d._children ? -d.size / 100 : -40; })
+    .charge(function(d) { return d._children ? -d.size / 80 : -60; })
     .linkDistance(function(d) { return d.target._children ? 80 : 25; })
     .size([h, w]);
 };
